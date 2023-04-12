@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+label{
+  display:inline-block;
+  width:80px;
+  text-align: right;
+  padding: 14px 10px 0 0;
+}
+
+input{
+  display:inline-block;
+  width:130px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+
+}
+input[type="text"], input[type="date"], input[type="time"]{
+  border: none;
+  border-radius: 5px;
+  //background: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+#form-add{
+  justify-content: space-around;
+  justify-items: stretch;
+}
+
+/* Display Task Styling */
+
+html, body{
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  font-family: sans-serif;
+ // background-image: linear-gradient(to right, #5a5694, #9e6b9d, #6498a3);
+ background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
+  margin: 50px 2%;
+  color: rgb(249, 246, 246);
+}
+
+/* Styling for the container class section of a selected reminder */
+
+
+.container{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Styling for the container header section of a selected reminder */
+
+.container h1{
+  text-shadow: 3px 1px black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+}
+
+ul{
+  display:block;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  padding: 30px;
+  border: 1px solid white;
+  margin-bottom: 15px;
+  i{
+      margin-left: 20px;
+      float: right;
+  }
+}
+
+i:hover{
+  cursor: pointer;
+}
+
+.details{
+  margin-top: 20px;
+}
+
+.details p{
+  margin: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.checked{
+  text-decoration: line-through;
+}
+.btn-container{
+  @extend .container;
+  margin-top: 0px;
+}
+
+#btn-add{
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(136, 58, 136);
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  font-family: "Arial", serif;
+  font-size: 18px;
+}
+
+
+#btn-add:hover{
+  cursor: pointer;
+  color: white;
+  background-color: rgba(86, 83, 134, 0.7);
+}
+
+
+input[type="submit"]{
+  @extend #btn-add
+}

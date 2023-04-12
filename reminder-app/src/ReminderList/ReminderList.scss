@@ -1,0 +1,77 @@
+
+/* Styling for the details section of a selected reminder */
+.Details{
+    background-color: rgb(194, 183, 235);
+    position: relative;
+    color: black;
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 170px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* Styling for the details button */
+.Detailsbtn{
+    margin-top: -40px;
+    margin-left: -65px;
+    color: rgb(70, 29, 70);    
+    position: absolute;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Arial", serif;
+    border-radius: 6px;
+    
+}
+
+/* Styling for the add reminder button */
+.Addbtn{
+    padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(104, 21, 104);
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  font-family: "Arial", serif;
+  font-size: 18px;
+  margin: 30px;
+
+}
+
+
+/* Styling for the add reminder button */
+.Deletebtn{
+    margin-top: -40px;
+    margin-left: 20px;
+    color: rgb(104, 21, 104);
+    position: absolute;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Arial", serif;
+    border-radius: 6px;
+}
+
+.Closebtn{
+
+    color: rgb(136, 58, 136);    
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Arial", serif;
+    border-radius: 6px;
+    border-color: rgb(209, 160, 228);
+    margin: 5px;
+
+}
+
+.Compbtn{
+
+    color: rgb(136, 58, 136);    
+    border-color: rgb(209, 160, 228);
+    font-weight: bold;
+    margin: 5px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Arial", serif;
+    border-radius: 6px;
+
+}
+
