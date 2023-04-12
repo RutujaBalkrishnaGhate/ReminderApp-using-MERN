@@ -12,11 +12,12 @@ const ReminderForm = function () {
 // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
+    const formattedDate = new Date(date + 'T' + time + ':00').toLocaleString('en-US', { timeZone: 'UTC' });
+
     const newReminder = {
       title: title,
       description: description,
-      date: date,
-      time: time,
+      createDate: formattedDate,
       completed: false,
 
     };
@@ -33,6 +34,8 @@ const ReminderForm = function () {
           console.log('Reminder saved successfully!');
           setTitle('');
           setDescription('');
+          setDate('');
+          setTime('');
           window.location.reload();
           window.alert('Reminder added successfully!');
 
@@ -72,7 +75,7 @@ const ReminderForm = function () {
         <label htmlFor="date">Date</label>
         <input
           type="date"
-          //_id="date"
+          id="date"
           placeholder="Date"
           value={date}
           onChange={(event) => setDate(event.target.value)}
@@ -81,7 +84,7 @@ const ReminderForm = function () {
         <label htmlFor="time">Time</label>
         <input
           type="time"
-          //id="time"
+          id="time"
           placeholder="Time"
           value={time}
           onChange={(event) => setTime(event.target.value)}

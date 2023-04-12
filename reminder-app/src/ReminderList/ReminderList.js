@@ -120,8 +120,7 @@ const ReminderList = function () {
         <h3>Details for reminder: {selectedReminder.title}</h3>
         <p>Description: {selectedReminder.description}</p>
         <p>Completed: {selectedReminder.completed ? 'Yes' : 'No'}</p>
-        <p>Created Date: {selectedReminder.createDate}</p>
-        <p>Modified Date: {selectedReminder.modifiedDate}</p>
+        <p>Date: {selectedReminder.createDate}</p>
         <button className="Compbtn" onClick={handleToggleStatus}>Mark as completed</button>
         <button className="Closebtn" onClick={handleCloseDetails}>Close</button>
         </div>
